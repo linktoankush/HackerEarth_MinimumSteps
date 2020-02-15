@@ -26,23 +26,30 @@ int main() {
 		}
 		int Ans = 0;
 
-		sort(Apple.begin(), Apple.end(), std::less<int>());
+		//sort(Apple.begin(), Apple.end(), std::less<int>());
 
 
 		--P;
-		for (int j = 0; j < N; ++j)
+		for (int j = 0; j < N-1; ++j)
 		{
-			if (P > 0)
+			if (P > 0) 
 			{
-				Ans += Apple[j];
-				--P;
+				if (Milk[j + 1] == 0)
+				{
+					P += Milk[j];
+				}
+				else
+				{
+					Ans += Apple[j];
+				}
 			}
 			else
 			{
-				P = Milk[j];
+				P += Milk[j];
 			}
+			--P;
 		}
-		cout << Ans << endl;
+		cout << Ans + Apple[N-1] << endl;
 
 	}
 	
