@@ -10,4 +10,6 @@ I see, most of the times I loose the track of time and end up in not saving the 
 | 1.|HackerRank Medium | Collecting Apples |
 | 2.|  HackerRank Easy| Arrays|
 |  3.|  McAffe|Fibonaci and GCD |
+|  4.|  HackerRank Easy|Migrating Birds |
+
 
